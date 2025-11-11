@@ -1,18 +1,24 @@
         body {
             margin: 3rem;
-            overflow: scroll;
             font-family: 'Inter', sans-serif;
             height: 100vh;
             touch-action: manipulation;
             background: linear-gradient(135deg, #f9a8d4, #f3e8ff);
-            overflow: hidden;
+            overflow: scroll;
         }
 
         #app {
             position: relative;
             width: 100%;
+            margin-top: 3em;
             height: 100%;
-            overflow: hidden;
+            overflow-y: scroll;
+            border-radius: 1rem;
+
+        }
+
+        #app::-webkit-scrollbar {
+            display: none;
 
         }
 
@@ -31,6 +37,7 @@
 
         .step {
             position: absolute;
+            margin-top: 1rem;
             width: 100%;
             max-width: 800px;
             padding: 40px;
